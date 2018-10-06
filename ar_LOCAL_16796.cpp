@@ -22,7 +22,7 @@ public:
   AR_GL_CV_Tester(const AR_GL_CV_Tester& other);
   ~AR_GL_CV_Tester();
 
-  bool initGL(); //setup GL for drawing
+  bool initGL(); //setup GL for drawing // This is in the master branch
   bool initCV(); //setup CV
   void display(); //our callback function
   void drawQuad(Mat&, Mat, Scalar);
