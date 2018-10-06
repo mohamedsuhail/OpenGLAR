@@ -23,6 +23,7 @@ public:
   ~AR_GL_CV_Tester();
 
   bool initGL(); //setup GL for drawing
+
   bool initCV(); //setup CV
   void display(); //our callback function
   void drawQuad(Mat&, Mat, Scalar);
