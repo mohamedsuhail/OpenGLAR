@@ -1,0 +1,8 @@
+cmake_minimum_required(VERSION 2.6)
+project(camcal)
+add_compile_options(-std=c++11)
+include_directories("/usr/local/include")
+find_package( OpenCV REQUIRED)
+add_executable(camcal camera_calibration.cpp)
+install(TARGETS camcal RUNTIME DESTINATION bin)
+target_link_libraries( camcal ${OpenCV_LIBS} )
